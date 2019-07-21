@@ -1,0 +1,22 @@
+import java.io.*;
+
+class Ascii{
+	char i, shazam;
+}
+
+class AsciiSwapper {
+	public static void main (String [] args) throws java.io.IOException{
+		char i, shazam;
+		
+		for (; ;) {
+			i = (char) System.in.read();
+			int changer = i - 32;
+			if(changer >= 65 && changer <= 90) {
+				shazam = (char)changer;
+				System.out.println(shazam);
+			}
+		
+		}
+		
+	} 
+}
